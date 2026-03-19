@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/homewise-hardware/static/css/main.99cef803.css",
-    "main.js": "/homewise-hardware/static/js/main.88a7d372.js",
+    "main.js": "/homewise-hardware/static/js/main.2c0aae89.js",
     "static/js/453.39c5de52.chunk.js": "/homewise-hardware/static/js/453.39c5de52.chunk.js",
     "index.html": "/homewise-hardware/index.html",
     "main.99cef803.css.map": "/homewise-hardware/static/css/main.99cef803.css.map",
-    "main.88a7d372.js.map": "/homewise-hardware/static/js/main.88a7d372.js.map",
+    "main.2c0aae89.js.map": "/homewise-hardware/static/js/main.2c0aae89.js.map",
     "453.39c5de52.chunk.js.map": "/homewise-hardware/static/js/453.39c5de52.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99cef803.css",
-    "static/js/main.88a7d372.js"
+    "static/js/main.2c0aae89.js"
   ]
 }

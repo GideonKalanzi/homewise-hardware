@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
@@ -11,7 +11,7 @@ function App(){
 
 return(
 
-<BrowserRouter>
+<Router>
 
 <Navbar/>
 
@@ -23,7 +23,7 @@ return(
 <Route path="/cart" element={<Cart/>}/>
 </Routes>
 
-</BrowserRouter>
+</Router>
 
 )
 

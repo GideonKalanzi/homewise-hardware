@@ -7,7 +7,7 @@ return(
 <div className="container">
 
 <h2>Electric Drill</h2>
-<p className="price">$85</p>
+<p className="price">UGX 85000</p>
 
 <h3>Available in Branches</h3>
 

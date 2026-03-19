@@ -49,7 +49,7 @@ return(
 
 <div className="card">
 <h3>Electric Drill</h3>
-<p className="price">$85</p>
+<p className="price">UGX 85000</p>
 <button onClick={()=>addToCart({name:"Electric Drill", price:85})}>
 Add to Cart
 </button>
@@ -57,7 +57,7 @@ Add to Cart
 
 <div className="card">
 <h3>Hammer</h3>
-<p className="price">$12</p>
+<p className="price">UGX 12000</p>
 <button onClick={()=>addToCart({name:"Hammer", price:12})}>
 Add to Cart
 </button>
@@ -65,7 +65,7 @@ Add to Cart
 
 <div className="card">
 <h3>PVC Pipes</h3>
-<p className="price">$18</p>
+<p className="price">UGX 18000</p>
 <button onClick={()=>addToCart({name:"PVC Pipes", price:18})}>
 Add to Cart
 </button>
@@ -73,7 +73,7 @@ Add to Cart
 
 <div className="card">
 <h3>Paint Bucket</h3>
-<p className="price">$25</p>
+<p className="price">UGX 25000</p>
 <button onClick={()=>addToCart({name:"Paint Bucket", price:25})}>
 Add to Cart
 </button>

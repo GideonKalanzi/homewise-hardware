@@ -28,5 +28,5 @@ return(
 )
 
 }
-
+//deploy-link: https://gideonkalanzi.github.io/homewise-hardware/
 export default App;

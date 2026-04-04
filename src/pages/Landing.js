@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/main.css";
 import productsData from "../data/productsData.js";
+import Chatbot from "../components/Chatbot";
 
 function Landing(){
 
@@ -36,65 +37,66 @@ alert("Added to cart");
 
 return(
 
-<div>
+    <div>
 
-{/* HERO */}
-<div className="hero">
-<h1>Homewise Hardware</h1>
-<p>Everything you need, across all branches</p>
-</div>
+        {/* HERO */}
+        <div className="hero">
+            <h1>Homewise Hardware</h1>
+            <p>Everything you need, across all branches</p>
+        </div>
 
-<div className="container">
+        <div className="container">
 
-<div className="layout">
+            <div className="layout">
 
-{/* LEFT SIDE - CATEGORIES */}
-<div className="sidebar">
-<h3>Categories</h3>
+                {/* LEFT SIDE - CATEGORIES */}
+                <div className="sidebar">
+                    <h3>Categories</h3>
 
-{categories.map((cat,index)=>(
-<div 
-key={index}
-className={`category ${selectedCategory===cat?"active":""}`}
-onClick={()=>setSelectedCategory(cat)}
->
-{cat}
-</div>
-))}
+                    {categories.map((cat,index)=>(
+                    <div 
+                        key={index}
+                        className={`category ${selectedCategory===cat?"active":""}`}
+                        onClick={()=>setSelectedCategory(cat)}
+                        >
+                        {cat}
+                    </div>
+                    ))}
 
-</div>
+                </div>
 
-{/* RIGHT SIDE - PRODUCTS */}
-<div className="main-content">
+                {/* RIGHT SIDE - PRODUCTS */}
+                <div className="main-content">
 
-<h2>{selectedCategory} Products</h2>
+                    <h2>{selectedCategory} Products</h2>
 
-<div className="products">
+                    <div className="products">
 
-{filteredProducts.map((p,index)=>(
-<div key={index} className="card">
+                        {filteredProducts.map((p,index)=>(
+                        <div key={index} className="card">
 
-<img src={p.image} alt={p.name}/>
+                            <img src={p.image} alt={p.name}/>
 
-<h3>{p.name}</h3>
-<p className="price">UGX {p.price.toLocaleString()}</p>
+                            <h3>{p.name}</h3>
+                            <p className="price">UGX {p.price.toLocaleString()}</p>
 
-<button onClick={()=>addToCart(p)}>
-Add to Cart
-</button>
+                            <button onClick={()=>addToCart(p)}>
+                            Add to Cart
+                            </button>
 
-</div>
-))}
+                        </div>
+                        ))}
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
+        <Chatbot setSelectedCategory={setSelectedCategory} />
 
-</div>
+    </div>
 
 );
 

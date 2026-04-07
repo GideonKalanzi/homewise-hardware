@@ -30,13 +30,15 @@ function Cart(){
                 <div key={index} className="card">
                     <img src={item.image} alt="" />
                     <h3>{item.name}</h3>
-                    <p className="price">${item.price}</p>
+                    <p className="price">UGX {item.price}</p>
 
                     <button onClick={()=>removeItem(index)}>Remove</button>
                 </div>
             ))}
 
-            <h3 style={{marginTop:"20px"}}>Total: ${total}</h3>
+            <h3 style={{marginTop:"20px"}}>Total: UGX {total}</h3>
+
+            <button onClick={() => window.location.href="/heckout"}> Checkout </button>
 
         </div>
     )

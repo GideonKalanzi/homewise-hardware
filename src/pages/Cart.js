@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import "../styles/main.css";
+import { useNavigate } from "react-router-dom";
 
 function Cart(){
 
     const [cart,setCart] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(()=>{
     const stored = JSON.parse(localStorage.getItem("cart")) || [];
@@ -38,7 +40,7 @@ function Cart(){
 
             <h3 style={{marginTop:"20px"}}>Total: UGX {total}</h3>
 
-            <button onClick={() => window.location.href="/heckout"}> Checkout </button>
+            <button onClick={() => navigate("/checkout")}>Checkout</button>
 
         </div>
     )
